@@ -23,8 +23,8 @@ def chooseWord():
 #searching the word
 def searchWord(word, letter, score):
   guess = False
-  for i in word:
-    if letter == word.index(i):
+  for i in range(0, len(word)):
+    if letter == word[i]:
       print("You found a match!")
       guess = True
 
